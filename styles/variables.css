@@ -1,20 +1,24 @@
 :root {
   /* typography */
-  --main-font-family: 'IBM Plex mono';
-  --main-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --main-font-family: "IBM Plex mono";
+  --main-title-size-tablet-desctop: clamp(
+    7.5rem,
+    0.5625rem + 14.4531vw,
+    9.8125rem
+  );
+  --main-title-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --main-text-size: 18px;
-  --main-title-line-height: 0.83; 
-  --main-title-text-shadow: 4px 4px 0 var(--accent-color);; 
+  --main-title-line-height: 0.83;
+  --main-title-text-shadow: 4px 4px 0 var(--accent-color);
   --bold-font-weight: 700;
   --text-line-height: 23.4px;
   --text-transform-uppercase: uppercase;
-  
-  
+
   /* pallete */
   --background-color: #000028;
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
-  --main-title-color: #DB00FF;
+  --main-title-color: #db00ff;
 
   /* images */
   --background-image: url(../images/cover-image.png);

@@ -2,11 +2,12 @@
 
 .page {
   margin: 0 auto;
+  color: var(--text-color);
+  font-family: var(--main-font-family), sans-serif;
+  font-size: var(--main-text-size);
+  background-color: var(--background-color);
   min-inline-size: 375px;
   max-inline-size: 1200px;
-  font-family: var(--main-font-family), sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
 }
 
 .content-section {
@@ -20,14 +21,13 @@
 .header {
   position: relative;
   display: grid;
-  block-size: 100vh;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  background-image: url(../images/cover-image-dark.png),
-  var(--background-image);
+  padding: var(--padding);
+  background-image: url(../images/cover-image-dark.png), var(--background-image);
   background-position: center;
   background-size: cover;
-  padding: var(--padding);
+  block-size: 100vh;
 }
 
 .decorative-sign {
@@ -35,23 +35,23 @@
   top: var(--padding);
   right: var(--padding);
   color: var(--accent-color);
-  text-transform: var(--text-transform-uppercase);
   line-height: 25px;
+  text-transform: var(--text-transform-uppercase);
   inline-size: 61px;
   block-size: 26px;
 }
 
 .decorative-sign::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
-  inline-size: 9px;
-  block-size: 9px;
-  background-color: var(--accent-color);
+  margin: 8px 9px;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--accent-color);
-  margin: 8px 9px;
+  background-color: var(--accent-color);
+  inline-size: 9px;
+  block-size: 9px;
 }
 
 .decorated-zone {
@@ -60,7 +60,7 @@
 
 .decorated-zone::before,
 .decorated-zone::after {
-  content: '';
+  content: "";
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
@@ -69,18 +69,18 @@
 .decorated-zone::before {
   top: var(--padding);
   right: var(--padding);
-  border-right: 1px solid var(--accent-color);
   border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
 }
 
 .decorated-zone::after {
   bottom: var(--padding);
   left: var(--padding);
-  border-left: 1px solid var(--accent-color);
   border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
 }
 
-.accent-title {
+.title-decor {
   color: var(--background-color);
   background-color: var(--accent-color);
 }
@@ -100,19 +100,19 @@
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 5;
-  font-size: var(--main-title-size);
   color: var(--main-title-color);
+  font-size: var(--main-title-size-mobile);
   line-height: var(--main-title-line-height);
   text-shadow: var(--main-title-text-shadow);
 }
 
-.header__subtitle {
+.header__title-description {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 5;
   grid-row-end: 7;
+  align-self: center;
 }
-
 
 /* Footer */
 .footer {
