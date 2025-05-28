@@ -21,6 +21,11 @@
 }
 
 .theme-light .page {
+}
+
+@media (prefers-color-scheme: light) {
+}
+:root {
   /* pallete */
   --background-color: #fff1f7;
   --text-color: #353430;
