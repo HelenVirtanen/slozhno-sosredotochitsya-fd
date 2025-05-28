@@ -31,7 +31,12 @@
 
   /* sizes */
   --padding: 10px;
+  --h3-margin-block-end: 10px;
   --button-padding: 2px 13px;
   --button-inline-size: 70px;
   --button-block-size: 26px;
+  --column-count: 1;
+  --column-size: 1fr;
+  --item-span: 1;
+  --grid-gap: 20px;
 }
