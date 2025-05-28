@@ -9,8 +9,56 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  /* pallete */
+  --background-color: #fff1f7;
+  --text-color: #353430;
+  --accent-color: #ff8dcb;
+  --accent-color-transparent: rgba(50, 49, 45, 0.4);
+  --main-title-color: #ffc2e6;
+
+  /* images */
+  --background-image: url(../images/cover-image-light.png);
 }
 
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  /* pallete */
+  --background-color: #fff1f7;
+  --text-color: #353430;
+  --accent-color: #ff8dcb;
+  --accent-color-transparent: rgba(50, 49, 45, 0.4);
+  --main-title-color: #ffc2e6;
+
+  /* images */
+  --background-image: url(../images/cover-image-light.png);
+
+  .decorative-sign {
+    display: none;
+  }
+
+  .decorated-zone::before {
+    --accent-color: #353430;
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+
+  .decorated-zone::after {
+    --accent-color: #353430;
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
+  }
+
+  .header__theme-menu-button_active {
+    --accent-color: #353430;
+    border: 1px solid var(--accent-color);
+  }
+
+  .section__title {
+    --accent-color: #353430;
+    color: var(--accent-color);
+  }
+
+  .title-decor {
+    --background-color: #353430;
+    color: var(--background-color);
+  }
 }
