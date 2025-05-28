@@ -85,15 +85,15 @@
 .decorated-zone::before {
   top: var(--padding, 10px);
   right: var(--padding, 10px);
-  border-top: 1px solid var(--accent-color, #ff0070);
-  border-right: 1px solid var(--accent-color, #ff0070);
+  border-block-start: 1px solid var(--accent-color, #ff0070);
+  border-inline-end: 1px solid var(--accent-color, #ff0070);
 }
 
 .decorated-zone::after {
   bottom: var(--padding, 10px);
   left: var(--padding, 10px);
-  border-bottom: 1px solid var(--accent-color, #ff0070);
-  border-left: 1px solid var(--accent-color, #ff0070);
+  border-block-end: 1px solid var(--accent-color, #ff0070);
+  border-inline-start: 1px solid var(--accent-color, #ff0070);
 }
 
 .header__theme-menu {
