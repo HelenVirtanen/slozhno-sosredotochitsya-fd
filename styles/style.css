@@ -4,6 +4,9 @@
   margin: 0 auto;
   min-inline-size: 375px;
   max-inline-size: 1200px;
+  font-family: var(--main-font);
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .content-section {
