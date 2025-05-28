@@ -7,4 +7,7 @@
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
   --main-title-color: #DB00FF;
+
+  /* images */
+  --background-image: url(../images/cover-image.png);
 }
