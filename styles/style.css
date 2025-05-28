@@ -52,6 +52,32 @@
   margin: 8px 9px;
 }
 
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::before {
+  top: var(--padding);
+  right: var(--padding);
+  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  bottom: var(--padding);
+  left: var(--padding);
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
 .header__theme-menu {
   grid-column-start: 3;
   grid-column-end: auto;
