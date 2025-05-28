@@ -21,6 +21,7 @@
   max-width: 375px;
   margin: auto;
   padding: 0 var(--padding);
+  margin-block-end: 50px;
 }
 
 /* Header */
@@ -31,6 +32,7 @@
   grid-template-rows: 1fr min-content 1fr;
   padding: var(--padding);
   block-size: 100dvh;
+  margin-block-end: 40px;
 }
 
 .decorative-sign {
@@ -142,7 +144,7 @@
   grid-column-start: 1;
   grid-column-end: 4;
   color: var(--main-title-color);
-  font-size: var(--main-title-size-mobile);
+  font-size: var(--h1-title-size-mobile);
   line-height: var(--main-title-line-height);
   text-shadow: var(--main-title-text-shadow);
 }
@@ -154,6 +156,19 @@
   grid-column-end: 4;
   align-self: center;
   font-weight: var(--bold-font-weight);
+}
+
+/* Main */
+.text-decor-link {
+  text-decoration: none;
+  text-shadow: var(--link-shadow);
+}
+
+.section__title {
+  font-size: var(--h2-text-size);
+  font-weight: var(--bold-font-weight);
+  line-height: var(--text-line-height);
+  color: var(--accent-color);
 }
 
 /* Footer */
