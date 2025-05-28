@@ -223,3 +223,11 @@
 .footer__title {
   font-weight: var(--bold-font-weight, 700);
 }
+
+@media (width >= 768px) {
+
+}
+
+@media (width >= 1024px) {
+  
+}
