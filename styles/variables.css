@@ -1,4 +1,11 @@
 :root {
+  /* pallete */
+  --background-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --accent-color-transparent: rgba(255, 0, 112, 0.4);
+  --main-title-color: #db00ff;
+  
   /* typography */
   --main-font-family: "IBM Plex mono";
   --h1-size-tablet-desctop: clamp(
@@ -18,13 +25,6 @@
   --text-line-height: 1.3;
   --button-line-height: 1;
   --headings-text-transform: uppercase;
-
-  /* pallete */
-  --background-color: #000028;
-  --text-color: #f1b2ce;
-  --accent-color: #ff0070;
-  --accent-color-transparent: rgba(255, 0, 112, 0.4);
-  --main-title-color: #db00ff;
 
   /* images */
   --background-image: url(../images/cover-image-dark.png);
