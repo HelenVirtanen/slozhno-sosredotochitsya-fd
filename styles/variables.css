@@ -12,17 +12,22 @@
   --main-title-text-shadow: 4px 4px 0 var(--accent-color);
   --bold-font-weight: 700;
   --text-line-height: 23.4px;
+  --button-line-height: 1;
   --text-transform-uppercase: uppercase;
 
   /* pallete */
   --background-color: #000028;
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
+  --accent-color-transparent: rgba(255, 0, 112, 0.4);
   --main-title-color: #db00ff;
 
   /* images */
-  --background-image: url(../images/cover-image.png);
+  --background-image: url(../images/cover-image-dark.png);
 
   /* sizes */
   --padding: 10px;
+  --button-padding: 2px 13px;
+  --button-inline-size: 70px;
+  --button-block-size: 26px;
 }

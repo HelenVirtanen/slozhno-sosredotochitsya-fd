@@ -1,11 +1,17 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   color: var(--text-color);
   font-family: var(--main-font-family), sans-serif;
   font-size: var(--main-text-size);
   background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   min-inline-size: 375px;
   max-inline-size: 1200px;
 }
@@ -24,10 +30,8 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
   padding: var(--padding);
-  background-image: url(../images/cover-image-dark.png), var(--background-image);
-  background-position: center;
-  background-size: cover;
   block-size: 100vh;
+  
 }
 
 .decorative-sign {
@@ -93,6 +97,45 @@
   justify-self: end;
   align-self: center;
   color: var(--accent-color);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  border: 1px solid transparent;
+  padding: var(--button-padding);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: var(--button-line-height);
+  background-color: transparent;
+  inline-size: var(--button-inline-size);
+  block-size: var(--button-block-size);
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button_active {
+    border: 1px solid var(--accent-color);
+    pointer-events: none;
+}
+
+.header__theme-menu-button.header__theme-menu-button_type_dark {
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color-transparent);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: 1px solid var(--accent-color-transparent);
 }
 
 .header__title {
