@@ -186,6 +186,22 @@
 }
 
 /* Gallery */
+.gallery {
+  gap: 10px;
+}
+
+.gallery__illustrations {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+  object-position: center;
+}
 
 /* Footer */
 .footer {

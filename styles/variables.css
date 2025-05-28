@@ -1,7 +1,7 @@
 :root {
   /* typography */
   --main-font-family: "IBM Plex mono";
-  --main-title-size-tablet-desctop: clamp(
+  --h1-title-size-tablet-desctop: clamp(
     7.5rem,
     0.5625rem + 14.4531vw,
     9.8125rem
