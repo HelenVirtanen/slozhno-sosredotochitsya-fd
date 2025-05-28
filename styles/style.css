@@ -29,6 +29,10 @@
   gap: var(--grid-gap);
 }
 
+.grid-item {
+  grid-column: span var(--item-span);
+}
+
 /* Header */
 .header {
   position: relative;
@@ -142,8 +146,7 @@
 .header__title {
   display: flex;
   grid-row: 2;
-  grid-column-start: 1;
-  grid-column-end: 4;
+  --item-span: 3;
   text-shadow: var(--main-title-text-shadow);
 }
 
@@ -157,8 +160,7 @@
 .header__title-description {
   display: flex;
   grid-row: 3;
-  grid-column-start: 1;
-  grid-column-end: 4;
+  --item-span: 3;
   align-self: center;
   font-weight: var(--bold-font-weight);
 }
