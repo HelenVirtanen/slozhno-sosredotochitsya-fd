@@ -13,8 +13,10 @@
   width: 100%;
   max-width: 375px;
   margin: auto;
+  padding: 0 var(--padding);
 }
 
+/* Header */
 .header {
   position: relative;
   display: grid;
@@ -78,6 +80,11 @@
   border-bottom: 1px solid var(--accent-color);
 }
 
+.accent-title {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+
 .header__theme-menu {
   grid-column-start: 3;
   grid-column-end: auto;
@@ -104,4 +111,10 @@
   grid-column-end: 4;
   grid-row-start: 5;
   grid-row-end: 7;
+}
+
+
+/* Footer */
+.footer {
+  padding: 0 var(--padding) var(--padding);
 }
