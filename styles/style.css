@@ -18,7 +18,6 @@
   grid-template-columns: var(--column-size, 1fr);
   gap: var(--grid-gap, 20px);
   width: 100%;
-  max-width: 375px;
   margin: auto;
   margin-block-end: 50px;
   padding: 0 var(--padding, 10px);
