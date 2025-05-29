@@ -14,14 +14,18 @@
 }
 
 .content-section {
-  width: 100%;
-  max-width: 375px;
-  margin: auto;
-  padding: 0 var(--padding, 10px);
-  margin-block-end: 50px;
   display: grid;
   grid-template-columns: var(--column-size, 1fr);
   gap: var(--grid-gap, 20px);
+  width: 100%;
+  max-width: 375px;
+  margin: auto;
+  margin-block-end: 50px;
+  padding: 0 var(--padding, 10px);
+}
+
+.content-section:last-child {
+  margin-block-end: 40px;
 }
 
 .grid-item {
@@ -30,19 +34,25 @@
 
 /* Header */
 .header {
+  --column-count: 3;
   position: relative;
   display: grid;
-  --column-count: 3;
   grid-template-columns: repeat(var(--column-count), var(--column-size, 1fr));
-  grid-template-rows: var(--column-size, 1fr) min-content var(--column-size, 1fr);
-  padding: var(--padding);
-  block-size: 100dvh;
+  grid-template-rows: var(--column-size, 1fr) min-content var(
+      --column-size,
+      1fr
+    );
   margin-block-end: 40px;
-  background-image: var(--background-image, url(../images/cover-image-dark.png));
+  padding: var(--padding);
+  background-image: var(
+    --background-image,
+    url(../images/cover-image-dark.png)
+  );
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
+  block-size: 100dvh;
 }
 
 .decorative-sign {
@@ -84,15 +94,15 @@
 .decorated-zone::before {
   top: var(--padding, 10px);
   right: var(--padding, 10px);
-  border-block-start: 1px solid var(--accent-color, #ff0070);
   border-inline-end: 1px solid var(--accent-color, #ff0070);
+  border-block-start: 1px solid var(--accent-color, #ff0070);
 }
 
 .decorated-zone::after {
   bottom: var(--padding, 10px);
   left: var(--padding, 10px);
-  border-block-end: 1px solid var(--accent-color, #ff0070);
   border-inline-start: 1px solid var(--accent-color, #ff0070);
+  border-block-end: 1px solid var(--accent-color, #ff0070);
 }
 
 .header__theme-menu {
@@ -142,23 +152,29 @@
 }
 
 .header__title {
+  --item-span: 3;
   display: flex;
   grid-row: 2;
-  --item-span: 3;
-  text-shadow: var(--main-title-text-shadow, 4px 4px 0 var(--accent-color, #ff0070));
+  text-shadow: var(
+    --main-title-text-shadow,
+    4px 4px 0 var(--accent-color, #ff0070)
+  );
 }
 
 .header__title,
 .footer__title {
   color: var(--main-title-color, #db00ff);
-  font-size: var(--h1-size-mobile, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
+  font-size: var(
+    --h1-size-mobile,
+    clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
+  );
   line-height: var(--main-title-line-height, 0.83);
 }
 
 .header__title-description {
+  --item-span: 3;
   display: flex;
   grid-row: 3;
-  --item-span: 3;
   align-self: center;
   font-weight: var(--bold-font-weight, 700);
 }
@@ -170,10 +186,10 @@
 }
 
 .section__title {
-  font-size: var(--h2-size, 18px);
-  font-weight: var(--bold-font-weight, 700);
-  line-height: var(--text-line-height, 1.3);
   color: var(--accent-color, #ff0070);
+  font-weight: var(--bold-font-weight, 700);
+  font-size: var(--h2-size, 18px);
+  line-height: var(--text-line-height, 1.3);
 }
 
 .title-decor {
@@ -187,8 +203,8 @@
 }
 
 .list-item__title {
-  font-size: var(--h3-size, 18px);
   margin-block-end: var(--h3-margin-block-end, 10px);
+  font-size: var(--h3-size, 18px);
 }
 
 /* Gallery */
@@ -197,24 +213,31 @@
 }
 
 .gallery__illustrations {
+  --grid-gap: 10px;
   display: grid;
   grid-template-columns: var(--column-size, 1fr);
-  --grid-gap: 10px;
   gap: var(--grid-gap);
 }
 
 .gallery__image {
   width: 100%;
-  height: auto; 
+  height: auto;
   object-fit: cover;
   object-position: center;
 }
 
 /* Footer */
 .footer {
-  padding: 0 var(--padding, 10px) var(--padding, 10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding, 10px);
+  text-shadow: var(
+    --footer-text-shadow,
+    2px 2px 0 var(--accent-color, #ff0070)
+  );
   block-size: 100dvh;
-  text-shadow: var(--footer-text-shadow, 2px 2px 0 var(--accent-color, #ff0070));
 }
 
 .footer__title {
@@ -222,9 +245,7 @@
 }
 
 @media (width >= 768px) {
-
 }
 
 @media (width >= 1024px) {
-  
 }
