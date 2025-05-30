@@ -283,6 +283,18 @@
     --start-column: 2;
     padding-inline-start: 7px;
   }
+
+  .factors {
+    grid-template-rows: auto auto;
+  }
+
+  .factors .section__list {
+    --start-column: 1;
+    --item-span: 3;
+    grid-row: 2;
+    padding-inline-start: 0;
+  }
+
 }
 
 @media (width >= 1024px) {
