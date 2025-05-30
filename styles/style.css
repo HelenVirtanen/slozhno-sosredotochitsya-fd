@@ -230,8 +230,7 @@
 
 /* Footer */
 .footer {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   justify-content: center;
   align-items: center;
   padding: var(--padding, 10px);
