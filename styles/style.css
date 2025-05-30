@@ -147,7 +147,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: 1px solid var(--accent-color-transparent, rgba(255, 0, 112, 0.4));
+  border-block-end: 1px solid var(--accent-color);
 }
 
 .header__title {
@@ -182,6 +182,18 @@
 .text-decor-link {
   text-decoration: none;
   text-shadow: var(--link-shadow, 2px 2px 0 var(--accent-color, #ff0070));
+}
+
+.text-decor-link:hover {
+  border-block-end: 1px solid var(--text-color, #f1b2ce);
+}
+
+.text-decor-link:focus {
+  outline: none;
+}
+
+.text-decor-link:focus-visible {
+  outline: 1px solid var(--text-color, #f1b2ce);
 }
 
 .section__title {
