@@ -261,6 +261,7 @@
 @media (width >= 768px) {
   .header {
     --column-count: 6;
+    block-size: 100vh;
   }
 
   .header__theme-menu {
@@ -358,6 +359,10 @@
     --start-column: 2;
     --item-span: 2;
     grid-row: 4;
+  }
+
+  .footer {
+    block-size: 100vh;
   }
 }
 
