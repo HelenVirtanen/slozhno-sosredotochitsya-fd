@@ -25,6 +25,10 @@
     display: none;
   }
 
+  .header__theme-menu-button {
+    color: var(--text-color);
+  }
+
   .decorated-zone::before,
   .decorated-zone::after,
   .header__theme-menu-button_active {
@@ -55,6 +59,10 @@
   }
   .decorative-sign {
     display: none;
+  }
+
+  .header__theme-menu-button {
+    color: var(--text-color);
   }
 
   .decorated-zone::before,
