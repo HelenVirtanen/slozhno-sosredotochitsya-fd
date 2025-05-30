@@ -5,7 +5,7 @@
   --accent-color: #ff0070;
   --accent-color-transparent: rgba(255, 0, 112, 0.4);
   --main-title-color: #db00ff;
-  
+
   /* typography */
   --main-font-family: "IBM Plex mono";
   --h1-size-tablet-desctop: clamp(
@@ -38,5 +38,12 @@
   --column-count: 1;
   --column-size: 1fr;
   --item-span: 1;
+  --start-column: 1;
   --grid-gap: 20px;
+}
+
+@media (width >= 768px) {
+  :root {
+    --padding: 20px;
+  }
 }
