@@ -1,14 +1,5 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
+/* Light theme based on class toggle */
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
   /* pallete */
   --background-color: #fff1f7;
   --text-color: #353430;
@@ -49,6 +40,7 @@
   }
 }
 
+/* Light theme based on user's automatic settings */
 @media (prefers-color-scheme: light) {
   :root {
     /* pallete */
@@ -61,6 +53,7 @@
     /* images */
     --background-image: url(../images/cover-image-light.png);
   }
+
   .decorative-sign {
     display: none;
   }
