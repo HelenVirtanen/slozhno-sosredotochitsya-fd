@@ -11,6 +11,14 @@
   background-color: var(--background-color, #000028);
   inline-size: clamp(375px, 100%, 1200px);
   min-block-size: 100%;
+  background-image: var(
+    --background-image,
+    url(../images/cover-image-dark.png)
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .content-section {
@@ -44,14 +52,6 @@
     );
   margin-block-end: var(--section-margin-block-end, 40px);
   padding: var(--padding);
-  background-image: var(
-    --background-image,
-    url(../images/cover-image-dark.png)
-  );
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   block-size: 100dvh;
 }
 
