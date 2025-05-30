@@ -32,6 +32,7 @@
   /* sizes */
   --padding: 10px;
   --h3-margin-block-end: 10px;
+  --section-margin-block-end: 40px;
   --button-padding: 2px 13px;
   --button-inline-size: 70px;
   --button-block-size: 26px;
@@ -45,5 +46,6 @@
 @media (width >= 768px) {
   :root {
     --padding: 20px;
+    --section-margin-block-end: 60px;
   }
 }
