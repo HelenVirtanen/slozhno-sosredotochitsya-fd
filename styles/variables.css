@@ -8,11 +8,7 @@
 
   /* typography */
   --main-font-family: "IBM Plex mono";
-  --h1-size-tablet-desctop: clamp(
-    7.5rem,
-    0.5625rem + 14.4531vw,
-    9.8125rem
-  );
+  --h1-size-tablet-desctop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --h1-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --h2-size: 18px;
   --h3-size: 18px;

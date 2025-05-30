@@ -27,7 +27,7 @@
   }
 
   .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--text-color);
+    border-block-end: 1px solid var(--text-color);
   }
 
   .section__title {
@@ -69,7 +69,7 @@
   }
 
   .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--text-color);
+    border-block-end: 1px solid var(--text-color);
   }
 
   .section__title {

@@ -5,7 +5,7 @@
   flex-direction: column;
   margin: 0 auto;
   color: var(--text-color);
-  font-family: var(--main-font-family, "IBM Plex mono"), sans-serif;
+  font-family: var(--main-font-family, "IBM Plex mono"), monospace, sans-serif;
   font-size: var(--main-text-size, 18px);
   line-height: var(--text-line-height, 1.3);
   background-color: var(--background-color, #000028);
@@ -125,6 +125,7 @@
   line-height: var(--button-line-height, 1);
   text-transform: lowercase;
   background-color: transparent;
+  transition: border 0.2s ease;
   inline-size: var(--button-inline-size, 70px);
   block-size: var(--button-block-size, 26px);
 }
