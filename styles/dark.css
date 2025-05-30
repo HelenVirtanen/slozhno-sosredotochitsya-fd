@@ -10,7 +10,3 @@
   /* images */
   --background-image: url(../images/cover-image-dark.png);
 }
-
-/* Selector is reserved for potential overrides or specific styles in dark theme */
-.theme-dark .page {
-} 
