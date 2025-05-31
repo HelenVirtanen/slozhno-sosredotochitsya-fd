@@ -40,7 +40,7 @@
   --grid-gap: 20px;
 }
 
-@media (width >= 768px) {
+@media (min-width: 768px) {
   :root {
     --padding: 20px;
     --section-margin-block-end: 60px;

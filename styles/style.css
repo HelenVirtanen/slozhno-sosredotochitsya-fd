@@ -256,7 +256,7 @@
   font-weight: var(--bold-font-weight, 700);
 }
 
-@media (width >= 768px) {
+@media (min-width: 768px) {
   .content-section {
     --column-count: 6;
     --item-span: 6;
@@ -371,7 +371,7 @@
   }
 }
 
-@media (width >= 1024px) {
+@media (min-width: 1024px) {
   .header__theme-menu {
     --start-column: 1;
     justify-self: center;
