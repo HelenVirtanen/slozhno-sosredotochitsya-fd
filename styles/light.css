@@ -5,39 +5,18 @@
   --text-color: #353430;
   --accent-color: #ff8dcb;
   --accent-color-transparent: rgba(50, 49, 45, 0.4);
-  --main-title-color: #ffc2e6;
+  --main-heading-color: #ffc2e6;
+  --button-box-shadow-color: #353430;
+  --header-menu-color: #353430;
+  --title-decor-text-color: #353430;
+  --title-decor-bg-color: #ff8dcb;
+  --decorative-sign-color: #353430;
+  --decorated-zone-border-color: #353430;
+  --decorative-sign-display: none;
+  --section-title-color: #353430;
 
   /* images */
   --background-image: url(../images/cover-image-light.png);
-}
-
-.theme-light .page {
-  .decorative-sign {
-    display: none;
-  }
-
-  .header__theme-menu-button {
-    color: var(--text-color);
-  }
-
-  .decorated-zone::before,
-  .decorated-zone::after,
-  .header__theme-menu-button_active {
-    border-color: var(--text-color);
-  }
-
-  .header__theme-menu-button:focus-visible {
-    border-block-end: 1px solid var(--text-color);
-  }
-
-  .section__title {
-    color: var(--text-color);
-  }
-
-  .title-decor {
-    color: var(--text-color);
-    background-color: var(--accent-color);
-  }
 }
 
 /* Light theme based on user's automatic settings */
@@ -48,36 +27,17 @@
     --text-color: #353430;
     --accent-color: #ff8dcb;
     --accent-color-transparent: rgba(50, 49, 45, 0.4);
-    --main-title-color: #ffc2e6;
+    --main-heading-color: #ffc2e6;
+    --button-box-shadow-color: #353430;
+    --header-menu-color: #353430;
+    --title-decor-text-color: #353430;
+    --title-decor-bg-color: #ff8dcb;
+    --decorative-sign-color: #353430;
+    --decorated-zone-border-color: #353430;
+    --decorative-sign-display: none;
+    --section-title-color: #353430;
 
     /* images */
     --background-image: url(../images/cover-image-light.png);
-  }
-
-  .decorative-sign {
-    display: none;
-  }
-
-  .header__theme-menu-button {
-    color: var(--text-color);
-  }
-
-  .decorated-zone::before,
-  .decorated-zone::after,
-  .header__theme-menu-button_active {
-    border-color: var(--text-color);
-  }
-
-  .header__theme-menu-button:focus-visible {
-    border-block-end: 1px solid var(--text-color);
-  }
-
-  .section__title {
-    color: var(--text-color);
-  }
-
-  .title-decor {
-    color: var(--text-color);
-    background-color: var(--accent-color);
   }
 }

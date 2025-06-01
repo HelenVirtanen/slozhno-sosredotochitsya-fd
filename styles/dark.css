@@ -5,7 +5,16 @@
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
   --accent-color-transparent: rgba(255, 0, 112, 0.4);
-  --main-title-color: #db00ff;
+  --main-heading-color: #db00ff;
+  --header-menu-color: #ff0070;
+  --button-box-shadow-color: #ff0070;
+  --title-decor-text-color: #000028;
+  --title-decor-bg-color: #ff0070;
+  --decorated-zone-border-color: #ff0070;
+  --decorative-sign-display: initial;
+  --decorative-sign-color: #ff0070;
+  --section-title-color: #ff0070;
+  --footer-box-shadow-color: #ff0070;
 
   /* images */
   --background-image: url(../images/cover-image-dark.png);
