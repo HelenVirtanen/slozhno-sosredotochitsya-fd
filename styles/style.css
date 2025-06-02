@@ -54,7 +54,7 @@
 }
 
 .decorative-sign {
-  display: var(--decorative-sign-display);
+  display: var(--decorative-sign-display, inline);
   position: absolute;
   top: var(--padding, 10px);
   right: var(--padding, 10px);
