@@ -14,9 +14,16 @@
   --decorated-zone-border-color: #353430;
   --decorative-sign-display: none;
   --section-title-color: #353430;
+  --footer-box-shadow-color: #ff8dcb;
 
   /* images */
   --background-image: url(../images/cover-image-light.png);
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --footer-box-shadow-color:  #ff0070;
+  }
 }
 
 /* Light theme based on user's automatic settings */
@@ -39,5 +46,11 @@
 
     /* images */
     --background-image: url(../images/cover-image-light.png);
+  }
+}
+
+@media (prefers-color-scheme: light) and (min-width: 1024px) {
+  :root {
+    --footer-box-shadow-color:  #ff0070;
   }
 }
